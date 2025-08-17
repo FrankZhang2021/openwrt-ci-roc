@@ -111,6 +111,7 @@ jobs:
         sed -i '/CONFIG_PACKAGE_luci-app-cpufreq=y/d' .config
         sed -i '/CONFIG_PACKAGE_adguardhome=y/d' .config
         sed -i '/CONFIG_PACKAGE_luci-app-adguardhome=y/d' .config
+        sed -i 's/mt7981b/mt7981/g' target/linux/mediatek/dts/mt7981b-creatlentem-clt-r30b1-common.dtsi
         # 运行自定义脚本
         $GITHUB_WORKSPACE/$DIY_SCRIPT
 
